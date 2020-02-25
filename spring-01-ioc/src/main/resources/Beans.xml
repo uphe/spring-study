@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDaoImpl" class="com.hzy.dao.UserDaoImpl"/>
+
+    <!--这里进行了注入，所以UserServiceImpl需要有set方法-->
+    <bean id="userServiceImpl" class="com.hzy.service.UserServiceImpl">
+        <!--应用Spring中创建好的对象-->
+        <property name="userDao" ref="userDaoImpl"/>
+    </bean>
+
+</beans>

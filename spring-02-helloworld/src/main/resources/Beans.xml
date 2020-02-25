@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--使用Spring创建对象，在Spring中这些都称为Bean-->
+    <bean id="hello" class="com.hzy.pojo.Hello">
+        <!--这里是用的value，如果是引用的话是ref-->
+        <property name="str" value="hello world"/>
+    </bean>
+
+</beans>

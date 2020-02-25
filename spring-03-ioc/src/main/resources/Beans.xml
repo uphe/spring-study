@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--
+    bean的配置
+    id：bean的唯一标识符，也就是我们的对象名
+    class：bean对象对应的全限类名，包名+类名
+    name：也是别名
+-->
+    <bean id="user" class="com.hzy.pojo.User" name="hehe me,you">
+        <property name="name" value="贺志营"/>
+    </bean>
+</beans>

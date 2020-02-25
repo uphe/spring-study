@@ -1,0 +1,13 @@
+import com.hzy.service.UserService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MyTest {
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService service = (UserService) context.getBean("userService");
+        service.add();
+        System.out.println("-------------------------");
+        service.delete();
+    }
+}
